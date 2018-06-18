@@ -16,6 +16,10 @@
   as an argument.
 - Users may now set a value for the URI fetcher to rename a downloaded artifact to after it
   has been downloaded.
+- Add observer command line option `--disable_task_resource_collection` to disable the collection of
+  CPU, memory, and disk metrics for observed tasks. This is useful in setups where metrics cannot be
+  gathered reliable (e.g. when using PID namespaces) or when it is expensive due to hundreds of
+  active tasks per host.
 
 ### Deprecations and removals:
 
